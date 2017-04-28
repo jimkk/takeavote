@@ -20,6 +20,21 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    // ...
+    firebase: {
+      apiKey: "AIzaSyCBzoDtF67e4AWoEgxqeczK0qx2t2AYNiQ",
+      authDomain: "take-a-vote.firebaseapp.com",
+      databaseURL: "https://take-a-vote.firebaseio.com",
+      storageBucket: "take-a-vote.appspot.com"
+    },
+
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
     }
   };
 

@@ -1,0 +1,24 @@
+<h2>Create New Poll</h2>
+<form>
+  <div class="form-group">
+    <label>Poll Name:</label>
+    {{input class="form-control" value=title placeholder="add name."}}
+  </div>
+  <div>
+    <label>Options</label>
+    <ul>
+      <li>
+        <div class="form-group">
+          {{input class="form-control" value=option1 placeholder="add option."}}
+        </div>
+      </li>
+      <li>
+      <div class="form-group">
+        {{input class="form-control" value=option2 placeholder="add option."}}
+      </div>
+      </li>
+    </ul>
+    <button class="btn">add option.</button><br>
+  </div>
+  <button {{action "addPoll"}} class="btn">Submit</button>
+</form>
